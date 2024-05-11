@@ -1,9 +1,12 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
+import { NavLink } from "react-router-dom";
 
 const Creditcard = () => {
   return (
-    <InfoBlock className="card" title="How to apply for a credit card" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
+    <NavLink to='Creditcard'>
+      <InfoBlock className="card" title="How to apply for a credit card" />
+    </NavLink>
   )
 };
 

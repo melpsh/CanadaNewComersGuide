@@ -14,12 +14,12 @@ function HomePage() {
     <h1 className="mt-5 mb-4">Welcome to Canada</h1>
     <div className="row">
       <IDCard path='IDCard'></IDCard>
-      {/* <MSPCard></MSPCard>
-      <SINNumber></SINNumber>
-      <Job></Job>
-      <Accomodation></Accomodation>
-      <Creditcard></Creditcard>
-      <Roommate></Roommate> */}
+      <MSPCard path='MSPCard'></MSPCard>
+      <SINNumber path='SINNumber'></SINNumber>
+      <Job path='Job'></Job>
+      <Accomodation path='Accomodation'></Accomodation>
+      <Creditcard path='Creditcard'></Creditcard>
+      <Roommate path='Roommate'></Roommate>
       {/* <InfoBlock className="card" title="How to find a community" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
       <InfoBlock className="card" title="How to find English classes" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
       <InfoBlock className="card" title="How to find get volunteer experience" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />

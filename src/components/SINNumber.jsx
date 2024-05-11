@@ -1,9 +1,12 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
+import { NavLink } from "react-router-dom";
 
 const SINNumber = () => {
   return (
-    <InfoBlock className="card" title="How to apply for SIN number" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
+    <NavLink to='SINNumber'>
+      <InfoBlock className="card" title="How to apply for SIN number" />
+    </NavLink>
   )
 };
 

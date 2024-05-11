@@ -1,9 +1,12 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
+import { NavLink } from "react-router-dom";
 
 const Accomodation = () => {
   return (
-    <InfoBlock className="card" title="How to find accomodation" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
+    <NavLink to='Accomodation'>
+      <InfoBlock className="card" title="How to find accomodation" />
+    </NavLink>
   )
 };
 
