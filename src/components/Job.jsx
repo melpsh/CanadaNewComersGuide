@@ -4,10 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Job = () => {
   return (
-    <NavLink to='Job'>
-      <InfoBlock className="card" title="How to apply for a job" />
-
-    </NavLink>
+    <h1>JOB</h1>
   )
 };
 

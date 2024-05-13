@@ -18,6 +18,11 @@ const App = () => {
       {/* <Route path='*' element={<HomePage />} /> */}
       <Route path ='IDCard' element={<IDCard />}/>
       <Route path='MSPCard' element ={<MSPCard />}/>
+      <Route path='SINNumber' element ={<SINNumber />}/>
+      <Route path='Creditcard' element ={<Creditcard />}/>
+      <Route path='Job' element ={<Job />}/>
+      <Route path='Accomodation' element ={<Accomodation />}/>
+      <Route path='Roommate' element ={<Roommate />}/>
     </Routes>
     </>
   );

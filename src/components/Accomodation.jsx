@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Accomodation = () => {
   return (
-    <NavLink to='Accomodation'>
-      <InfoBlock className="card" title="How to find accomodation" />
-    </NavLink>
+    <h1>Accomodation</h1>
   )
 };
 

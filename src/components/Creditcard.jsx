@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Creditcard = () => {
   return (
-    <NavLink to='Creditcard'>
-      <InfoBlock className="card" title="How to apply for a credit card" />
-    </NavLink>
+    <h1>CREDTCARD</h1>
   )
 };
 

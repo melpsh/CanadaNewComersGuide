@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const SINNumber = () => {
   return (
-    <NavLink to='SINNumber'>
-      <InfoBlock className="card" title="How to apply for SIN number" />
-    </NavLink>
+    <h1>SIN Number</h1>
   )
 };
 
