@@ -15,7 +15,6 @@ const InfoBlock = ({ title, infoUrl }) => {
       <div className="card cursor-pointer" style={styles} onClick={handleInfoClick}>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <Link to="/IDCard">Learn More</Link>
           {/* Add additional content or links here */}
         </div>
       </div>

@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const MSPCard = () => {
   return (
-    <NavLink to='MSPCard'>
-      <InfoBlock className="card" title="How to apply for MSP card" />
-    </NavLink>
+      <h1>MSP CARD</h1>
   )
 };
 
