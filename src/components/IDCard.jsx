@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from "./Layout";
 // import InfoBlock from "./InfoBlock";
 // import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom';
 
@@ -6,7 +7,8 @@ import React from "react";
 const IDCard = () => {
   return(
   <>
-    <h1>
+  <Layout>
+  <h1>
       helooooooooooooooooooooooooooo
     </h1>
     <div>
@@ -51,6 +53,8 @@ const IDCard = () => {
       [Province/Territory Specific Websites]: Each province or territory may have its own website with detailed information on ID card applications and requirements. Check the relevant website for your location.
       By following these steps and utilizing the provided resources, you can successfully apply for a Canadian ID card as a newcomer to Canada.
     </div>
+  </Layout>
+
   </>
 
   )

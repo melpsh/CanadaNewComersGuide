@@ -1,10 +1,14 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
 import { NavLink } from "react-router-dom";
+import Layout from "./Layout";
 
 const Accomodation = () => {
   return (
-    <h1>Accomodation</h1>
+    <Layout>
+      <h1>Accomodation</h1>
+    </Layout>
+
   )
 };
 

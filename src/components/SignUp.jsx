@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import firebase from '../firebaseConfig'; 
 import { getAuth } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+import Layout from './Layout';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +37,8 @@ const SignUp = () => {
   
 
   return (
-    <div className="container mt-5">
+    <Layout>
+          <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 className="text-center">Sign Up</h2>
@@ -63,6 +65,8 @@ const SignUp = () => {
         </div>
       </div>
     </div>
+    </Layout>
+
   );
 };
 

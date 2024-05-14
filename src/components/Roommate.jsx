@@ -1,11 +1,15 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
+import Layout from "./Layout";
 
 const Roommate = () => {
   return (
-    <h1>
+    <Layout>
+          <h1>
       Roommate
-    </h1>
+      </h1>
+    </Layout>
+
   )
 };
 

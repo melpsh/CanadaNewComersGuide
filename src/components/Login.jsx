@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
+import Layout from './Layout';
 
 const Login = () => {
   return (
-    <div className="container mt-5">
+    <Layout>
+          <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 className="text-center">Login</h2>
@@ -29,6 +31,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </Layout>
+
   );
 };
 
