@@ -10,6 +10,7 @@ import Roommate from './components/Roommate';
 import HomePage from './components/HomePage';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import ResetPassword from './components/ResetPassword';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Route path='Job' element ={<Job />}/>
       <Route path='Accomodation' element ={<Accomodation />}/>
       <Route path='Roommate' element ={<Roommate />}/>
+      <Route path='reset-password' element={<ResetPassword />}/>
     </Routes>
     </>
   );

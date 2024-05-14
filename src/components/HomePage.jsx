@@ -21,34 +21,28 @@ function HomePage() {
 </div>
 <h1 className="mt-5 mb-4">Welcome to Canada</h1>
 <div className="row">
-  <NavLink className="card col-md-4 mb-4 card-body " to='IDCard'>How to apply for Canadian ID</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='MSPCard'>How to apply for MSP</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='SINNumber'>How to apply for SIN number</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Creditcard'>How to apply for Creditcard</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Roommate'>How to find a roommate</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Community'>How to find community</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
-  <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
-{/* 
-<InfoBlock className="card" title="How to find English classes" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="How to find get volunteer experience" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="How to find a community" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="How to find a family doctor" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="How to find a high scool" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="How to file taxes" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
-<InfoBlock className="card" title="Applications for new comers to Canada" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" /> */}
+<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='IDCard'>How to apply for Canadian ID</NavLink>
+<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='MSPCard'>How to apply for MSP</NavLink>
+<NavLink className="card col-md-4 mb-4 card-body" to='SINNumber'>How to apply for SIN number</NavLink>
+<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Creditcard'>How to apply for Creditcard</NavLink>
+<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Roommate'>How to find a roommate</NavLink>
+
+
+
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Roommate'>How to find a roommate</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Community'>How to find community</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='englishClass'>How to find English Classes</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Volunteer'>How to find volunteer experience</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='familydr'>How to find family doctor</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='school'>How to find school for children</NavLink>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='taxes'>How to file taxes</NavLink>
+
   <Routes>
   <Route path ='/IDCard' element={<IDCard />}/>
   <Route path= '/MSPCard' element={<MSPCard />}/>
-  {/* <IDCard path='IDCard'></IDCard>
-  <MSPCard path='MSPCard'></MSPCard>
-  <SINNumber path='SINNumber'></SINNumber>
-  <Job path='Job'></Job>
-  <Accomodation path='Accomodation'></Accomodation>
-  <Creditcard path='Creditcard'></Creditcard>
-  <Roommate path='Roommate'></Roommate> */}
+  
+
   </Routes>
 </div>
 </div>
