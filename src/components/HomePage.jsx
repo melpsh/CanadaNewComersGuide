@@ -12,6 +12,8 @@ import { NavLink, Route, Routes } from "react-router-dom";
 function HomePage() {
   return (
     <div className="container">
+      <NavLink to='SignUp'>SignUp</NavLink>
+      <NavLink to='Login'>Login</NavLink>
     <h1 className="mt-5 mb-4">Welcome to Canada</h1>
     <div className="row">
       <NavLink className="card col-md-4 mb-4 card-body " to='IDCard'>How to apply for Canadian ID</NavLink>
