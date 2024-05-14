@@ -12,8 +12,11 @@ import { NavLink, Route, Routes } from "react-router-dom";
 function HomePage() {
   return (
     <div className="container">
-      <NavLink to='SignUp'>SignUp</NavLink>
-      <NavLink to='Login'>Login</NavLink>
+
+    <div class="text-end">
+    <NavLink class="btn btn-primary me-2" to="/SignUp" style={{padding: "10px 20px", border: "1px solid #007bff"}}>Sign Up</NavLink>
+    <NavLink class="btn btn-outline-primary" to="/Login" style={{padding: "10px 20px;", border: "1px solid #007bff"}}>Login</NavLink>
+    </div>
     <h1 className="mt-5 mb-4">Welcome to Canada</h1>
     <div className="row">
       <NavLink className="card col-md-4 mb-4 card-body " to='IDCard'>How to apply for Canadian ID</NavLink>
@@ -21,10 +24,12 @@ function HomePage() {
       <NavLink className="card col-md-4 mb-4 card-body " to='SINNumber'>How to apply for SIN number</NavLink>
       <NavLink className="card col-md-4 mb-4 card-body " to='Creditcard'>How to apply for Creditcard</NavLink>
       <NavLink className="card col-md-4 mb-4 card-body " to='Roommate'>How to find a roommate</NavLink>
+      <NavLink className="card col-md-4 mb-4 card-body " to='Community'>How to find community</NavLink>
       <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
-    {/* <InfoBlock className="card" title="How to apply for Canadian ID" />
-    <InfoBlock className="card" title="How to apply for MSP" />
-    <InfoBlock className="card" title="How to find a community" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
+      <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
+      <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
+      <NavLink className="card col-md-4 mb-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
+    {/* 
     <InfoBlock className="card" title="How to find English classes" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
     <InfoBlock className="card" title="How to find get volunteer experience" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
     <InfoBlock className="card" title="How to find a community" infoUrl="https://melpsh.github.io/CanadaNewComersGuide/sin_number_info" />
