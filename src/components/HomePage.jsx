@@ -21,15 +21,11 @@ function HomePage() {
 </div>
 <h1 className="mt-5 mb-4">Welcome to Canada</h1>
 <div className="row">
-<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='IDCard'>How to apply for Canadian ID</NavLink>
-<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='MSPCard'>How to apply for MSP</NavLink>
-<NavLink className="card col-md-4 mb-4 card-body" to='SINNumber'>How to apply for SIN number</NavLink>
-<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Creditcard'>How to apply for Creditcard</NavLink>
-<NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Roommate'>How to find a roommate</NavLink>
-
-
-
-  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Roommate'>How to find a roommate</NavLink>
+  <NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='IDCard'>How to apply for Canadian ID</NavLink>
+  <NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='MSPCard'>How to apply for MSP</NavLink>
+  <NavLink className="card col-md-4 mb-4 card-body" to='SINNumber'>How to apply for SIN number</NavLink>
+  <NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Creditcard'>How to apply for Creditcard</NavLink>
+  <NavLink className="card col-md-4 mb-4 card-body mr-md-4" to='Roommate'>How to find a roommate</NavLink>
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Community'>How to find community</NavLink>
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='Accomodation'>How to find Accomodation</NavLink>
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='englishClass'>How to find English Classes</NavLink>
@@ -37,13 +33,7 @@ function HomePage() {
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='familydr'>How to find family doctor</NavLink>
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='school'>How to find school for children</NavLink>
   <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='taxes'>How to file taxes</NavLink>
-
-  <Routes>
-  <Route path ='/IDCard' element={<IDCard />}/>
-  <Route path= '/MSPCard' element={<MSPCard />}/>
-  
-
-  </Routes>
+  <NavLink className="card col-md-4 mb-4 mr-4 card-body " to='register'>Register</NavLink>
 </div>
 </div>
     </Layout>

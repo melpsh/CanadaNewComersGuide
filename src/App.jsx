@@ -11,6 +11,7 @@ import HomePage from './components/HomePage';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import ResetPassword from './components/ResetPassword';
+import Register from './components/Register';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <Route path='Accomodation' element ={<Accomodation />}/>
       <Route path='Roommate' element ={<Roommate />}/>
       <Route path='reset-password' element={<ResetPassword />}/>
+      <Route path='register' element={<Register />}/>
     </Routes>
     </>
   );
