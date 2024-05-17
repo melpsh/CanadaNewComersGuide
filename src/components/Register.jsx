@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from '../api/axios';
+import Layout from "./Layout";
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -82,7 +83,8 @@ const Register = () => {
     }
 
     return (
-        <div className="container d-flex justify-content-center align-items-center vh-100">
+        <Layout>
+                    <div className="container d-flex justify-content-center align-items-center vh-100">
             <section className="card p-4">
                 {success ? (
                     <div>
@@ -162,6 +164,7 @@ const Register = () => {
                 )}
             </section>
         </div>
+        </Layout>
     );
 };
 
