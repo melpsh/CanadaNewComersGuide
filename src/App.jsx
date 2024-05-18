@@ -12,6 +12,13 @@ import SignUp from './components/SignUp';
 import Login from './components/Login';
 import ResetPassword from './components/ResetPassword';
 import Register from './components/Register';
+import { Client } from 'appwrite';
+
+const client = new Client();
+
+client
+    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setProject('6646f9a7002e21400b4f');
 
 const App = () => {
   return (

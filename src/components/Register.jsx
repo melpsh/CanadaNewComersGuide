@@ -95,7 +95,6 @@ const Register = () => {
                     </div>
                 ) : (
                     <div>
-                        <h1>Helllllllooooooooo</h1>
                         <p ref={errRef} className={errMsg ? "errMsg" :"offscreen"}aria-live="assertive">{errMsg}</p>
                         <h1>Register</h1>
                         <form onSubmit={handleSubmit}>
