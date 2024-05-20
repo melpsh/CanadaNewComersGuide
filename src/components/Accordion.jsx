@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import './Accordion.css'
 
-const Accordion = ({data}) => {
+
+
+const Accordion = () => {
     const [open, setOpen]= useState(null);
 
     const handleAccordion = (id)=>{
