@@ -29,7 +29,7 @@ const platformsData = [
     }
   ];
 
-const Platforms = () => {
+const RoommatePlatforms = () => {
   return (
     <div className="platforms">
       {platformsData.map(platform => (
@@ -43,4 +43,4 @@ const Platforms = () => {
   );
 };
 
-export default Platforms;
+export default RoommatePlatforms;

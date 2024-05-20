@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
-import Platforms from "./Platforms"; // Import the Platforms component
+import Platforms from "./RoommatePlatforms"; // Import the Platforms component
 
 const roommateData = [
   {
@@ -85,7 +85,7 @@ const Roommate = () => {
 
         <div className="additional-resources">
           <h2>Find Roommates on These Platforms</h2>
-          <Platforms /> 
+          <RoommatePlatforms /> 
         </div>
 
         <div className="general-resources">
