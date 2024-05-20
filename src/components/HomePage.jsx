@@ -61,12 +61,17 @@ function HomePage() {
             <FontAwesomeIcon icon={faFileAlt} className="me-2" />
             How to file taxes
           </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='register'>
+          {/* <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='register'>
             <FontAwesomeIcon icon={faUserPlus} className="me-2" />
             Register
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </Layout>
   )
 }

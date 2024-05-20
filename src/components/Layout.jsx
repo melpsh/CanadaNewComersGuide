@@ -11,12 +11,12 @@ const Layout = ({ children }) => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               {/* Add other navbar elements here */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/login">Login</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/signup">Sign Up</Link>
-              </li>
+              </li> */}
               {/* Add more navbar links as needed */}
             </ul>
           </div>

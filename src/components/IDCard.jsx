@@ -143,7 +143,11 @@ Government of Canada: Identification Requirements: Get Proof of Identity
 Service Canada: Service Canada Locations
 By following these steps and utilizing the provided resources, newcomers to Canada can successfully obtain a provincial or territorial ID card. Be sure to verify the specific requirements and procedures for your particular province or territory.
         </div>
-      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 };

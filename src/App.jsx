@@ -25,8 +25,8 @@ const App = () => {
     <>
     <Routes>
       <Route path='/' element={<HomePage />}/>
-      <Route path='SignUp' element={<SignUp />}/>
-      <Route path='Login' element={<Login />}/>
+      {/* <Route path='SignUp' element={<SignUp />}/>
+      <Route path='Login' element={<Login />}/> */}
       <Route path ='IDCard' element={<IDCard />}/>
       <Route path='MSPCard' element ={<MSPCard />}/>
       <Route path='SINNumber' element ={<SINNumber />}/>
@@ -35,7 +35,7 @@ const App = () => {
       <Route path='Accomodation' element ={<Accomodation />}/>
       <Route path='Roommate' element ={<Roommate />}/>
       <Route path='reset-password' element={<ResetPassword />}/>
-      <Route path='register' element={<Register />}/>
+      {/* <Route path='register' element={<Register />}/> */}
     </Routes>
     </>
   );
