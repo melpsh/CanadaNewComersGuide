@@ -1,36 +1,61 @@
 import React from "react";
 import Layout from "./Layout";
+import Accordion from "./Accordion";
+import { Link } from "react-router-dom";
 
 const IDCard = () => {
   return (
     <Layout>
-      <div className="container mt-5">
-        <h1 className="text-center mb-4">Apply for Canadian ID Card</h1>
-        <div className="card p-4">
-          <h2>Step 1: Determine Eligibility</h2>
+
+
+        <Accordion />
+        <div>
+          <br />
+        <h6>
+        Additional Resources
+          </h6>
           <p>
-            Before applying for a Canadian ID card, ensure that you are eligible. Typically, you are eligible if you:
+          Here are some resources for specific provinces and territories:
           </p>
-          <ul>
-            <li>Are a permanent resident of Canada.</li>
-            <li>Have reached the age of majority in your province or territory.</li>
-            <li>Do not possess a driver's license.</li>
-          </ul>
-          {/* Repeat the same pattern for each step */}
-          <h2 className="mt-4">Step 2: Gather Required Documents</h2>
-          <p>
-            Ensure you have the following documents ready:
-          </p>
-          <ul>
-            <li>Proof of Identity: Such as a valid foreign passport or birth certificate.</li>
-            <li>Proof of Residency: A document showing your current Canadian address, such as a utility bill or rental agreement.</li>
-            <li>Proof of Immigration Status: This could be your Permanent Resident Card (PR card) or other relevant immigration documents.</li>
-            <li>Additional Identification: Some provinces may require additional identification, so it's wise to check with your local government office.</li>
-          </ul>
-          {/* Repeat the same pattern for each step */}
-          {/* Add more steps as necessary */}
+
+
+<div>
+  <ul>
+    <li>
+    <span>British Columbia: </span> <Link>BC Services Card </Link>
+    </li>
+    <li>
+    <span>Ontario: </span> <Link>Ontario Photo Card </Link>
+    </li>
+    <li>
+    <span>Alberta:</span> <Link>Alberta ID Card </Link>
+    </li>
+    <li>
+    <span>Quebec: </span> <Link>Health Insurance Card (used as ID) </Link>
+    </li>
+    <li>
+    <span>Nova Scotia: </span> <Link> Nova Scotia ID Card</Link>
+    </li>
+    <li>
+    <span>Manitoba: </span> <Link>Manitoba ID Card </Link>
+    </li>
+    <li>
+    <span>Newfoundland and Labrador: </span> <Link>NL ID Card </Link>
+    </li>
+  </ul>
+</div>
+
+ 
+<h6>
+General Government Resources
+</h6>
+
+Government of Canada: Identification Requirements: Get Proof of Identity
+Service Canada: Service Canada Locations
+By following these steps and utilizing the provided resources, newcomers to Canada can successfully obtain a provincial or territorial ID card. Be sure to verify the specific requirements and procedures for your particular province or territory.
         </div>
-      </div>
+       
+
     </Layout>
   );
 };
