@@ -28,6 +28,7 @@ const Register = () => {
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
+
     useEffect(() => {
         userRef.current.focus();
     },[])
@@ -51,7 +52,8 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log('the resgistration button is working');
-        
+        console.log('user',user);
+        console.log('pass',pwd);
         const v1 = USER_REGEX.test(user);
         const v2 = PWD_REGEX.test(pwd);
         if(!v1 || !v2) {
@@ -64,6 +66,7 @@ const Register = () => {
             headers : {'Content-Type': 'application/json'},
             withCredentials: true
         });
+        
         console.log(response.data);
         console.log(response.accessToken);
         console.log(JSON.stringify(response));

@@ -33,6 +33,12 @@ const SignUp = () => {
     } catch (error) {
       console.error('Registration failed:', error);
     }
+    // try {
+    //   await auth.createUserWithEmailAndPassword(formData.email, formData.password);
+    //   console.log('User registered successfully');
+    // } catch (error) {
+    //   console.error('Registration failed:', error);
+    // }
   };
   
 
