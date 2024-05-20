@@ -17,7 +17,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faIdCard} className="me-2" />
             How to apply for Canadian ID
           </NavLink>
-          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='MSPCard'>
+          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='HealthCard'>
             <FontAwesomeIcon icon={faHospital} className="me-2" />
             How to apply for Health Card
           </NavLink>

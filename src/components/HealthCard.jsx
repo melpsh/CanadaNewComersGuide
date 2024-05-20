@@ -1,8 +1,6 @@
 import React from "react";
-import InfoBlock from "./InfoBlock";
-import { NavLink } from "react-router-dom";
 import Layout from "./Layout";
-import Accordion from "./Accordion";
+import "./IDCard.css";
 
 const healthCardData = [
   {
@@ -83,9 +81,117 @@ const healthCardData = [
     id: 8,
     title: 'Additional Tips and Resources',
     desc: `Interim Health Coverage: Purchase private health insurance to cover you during any waiting period before your provincial or territorial health coverage begins.
+    <br/>
     Healthcare Services: Familiarize yourself with local healthcare services, including family doctors, clinics, and hospitals.
+    <br/>
     Update Information: Ensure you update your address with your provincial or territorial health authority if you move.
+    <br/>
     Community Support: Look for newcomer services and community resources in your area for additional support.`
   }
 ];
 
+const HealthCard = () => {
+  return (
+    <Layout>
+      <div className="container">
+        <h2>How to Get a Health Card in Canada</h2>
+        {healthCardData.map(step => (
+          <div key={step.id} className="step">
+            <h3>{step.title}</h3>
+            <div dangerouslySetInnerHTML={{ __html: step.desc }} />
+          </div>
+        ))}
+
+        <div className="additional-resources">
+          <h2>Additional Resources</h2>
+          <ul>
+            <li>
+              <a href="https://www.ontario.ca/page/apply-ohip-and-get-health-card" target="_blank" rel="noopener noreferrer">
+                Ontario: OHIP
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ramq.gouv.qc.ca/en/citizens/health-insurance/registration/Pages/registration.aspx" target="_blank" rel="noopener noreferrer">
+                Quebec: RAMQ
+              </a>
+            </li>
+            <li>
+              <a href="https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/msp" target="_blank" rel="noopener noreferrer">
+                British Columbia: MSP
+              </a>
+            </li>
+            <li>
+              <a href="https://www.alberta.ca/ahcip.aspx" target="_blank" rel="noopener noreferrer">
+                Alberta: AHCIP
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.mb.ca/health/mhsip/" target="_blank" rel="noopener noreferrer">
+                Manitoba Health
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ehealthsask.ca/residents/health-cards/Pages/default.aspx" target="_blank" rel="noopener noreferrer">
+                Saskatchewan Health
+              </a>
+            </li>
+            <li>
+              <a href="https://novascotia.ca/dhw/msi/" target="_blank" rel="noopener noreferrer">
+                Nova Scotia: MSI
+              </a>
+            </li>
+            <li>
+              <a href="https://www2.gnb.ca/content/gnb/en/departments/health/MedicarePrescriptionDrugPlan.html" target="_blank" rel="noopener noreferrer">
+                New Brunswick: Medicare
+              </a>
+            </li>
+            <li>
+              <a href="https://www.princeedwardisland.ca/en/service/register-pei-health-card" target="_blank" rel="noopener noreferrer">
+                Prince Edward Island: PEI Health
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.nl.ca/hcs/mcp/" target="_blank" rel="noopener noreferrer">
+                Newfoundland and Labrador: MCP
+              </a>
+            </li>
+            <li>
+              <a href="https://www.hss.gov.nt.ca/en/services/nwt-health-care-plan/apply-health-care-card" target="_blank" rel="noopener noreferrer">
+                Northwest Territories: NWT Health
+              </a>
+            </li>
+            <li>
+              <a href="https://yukon.ca/en/health-and-wellness/health-care-insurance-plan" target="_blank" rel="noopener noreferrer">
+                Yukon Health
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.nu.ca/health/information/health-care-card" target="_blank" rel="noopener noreferrer">
+                Nunavut Health
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="general-resources">
+          <h2>General Government Resources</h2>
+          <ul>
+            <li>
+              <a href="https://www.canada.ca/en/employment-social-development/services/sin.html" target="_blank" rel="noopener noreferrer">
+                Government of Canada: Identification Requirements: Get Proof of Identity
+              </a>
+            </li>
+            <li>
+              <a href="https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng" target="_blank" rel="noopener noreferrer">
+                Service Canada: Service Canada Locations
+              </a>
+            </li>
+          </ul>
+          <p>By following these steps and utilizing the provided resources, you can successfully obtain a health card in Canada. Be sure to verify the specific requirements and procedures for your particular province or territory.</p>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default HealthCard;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import IDCard from './components/IDCard'
-import MSPCard from './components/MSPCard';
 import SINNumber from './components/SINNumber';
 import Job from './components/Job';
 import Accomodation from './components/Accomodation';
@@ -13,6 +12,7 @@ import Login from './components/Login';
 import ResetPassword from './components/ResetPassword';
 import Register from './components/Register';
 import { Client } from 'appwrite';
+import HealthCard from './components/HealthCard';
 
 const client = new Client();
 
@@ -28,7 +28,8 @@ const App = () => {
       {/* <Route path='SignUp' element={<SignUp />}/>
       <Route path='Login' element={<Login />}/> */}
       <Route path ='IDCard' element={<IDCard />}/>
-      <Route path='MSPCard' element ={<MSPCard />}/>
+      {/* <Route path='MSPCard' element ={<MSPCard />}/> */}
+      <Route path='HealthCard' element ={<HealthCard />}/>
       <Route path='SINNumber' element ={<SINNumber />}/>
       <Route path='Creditcard' element ={<Creditcard />}/>
       <Route path='Job' element ={<Job />}/>
