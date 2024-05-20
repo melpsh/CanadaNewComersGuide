@@ -19,7 +19,7 @@ function HomePage() {
           </NavLink>
           <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='MSPCard'>
             <FontAwesomeIcon icon={faHospital} className="me-2" />
-            How to apply for MSP
+            How to apply for Health Card
           </NavLink>
           <NavLink className="card col-md-4 mb-4 card-body canada-card" to='SINNumber'>
             <FontAwesomeIcon icon={faUser} className="me-2" />
