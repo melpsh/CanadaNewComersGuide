@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
 import Platforms from "./RoommatePlatforms"; // Import the Platforms component
+import RoommatePlatforms from "./RoommatePlatforms";
 
 const roommateData = [
   {
