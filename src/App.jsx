@@ -13,6 +13,7 @@ import ResetPassword from './components/ResetPassword';
 import Register from './components/Register';
 import { Client } from 'appwrite';
 import HealthCard from './components/HealthCard';
+import EnglishClasses from './components/EnglishClasses';
 
 const client = new Client();
 
@@ -36,6 +37,7 @@ const App = () => {
       <Route path='Accomodation' element ={<Accomodation />}/>
       <Route path='Roommate' element ={<Roommate />}/>
       <Route path='reset-password' element={<ResetPassword />}/>
+      <Route path='EnglishClasses' element={<EnglishClasses />}/>
       {/* <Route path='register' element={<Register />}/> */}
     </Routes>
     </>

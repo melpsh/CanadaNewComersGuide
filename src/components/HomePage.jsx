@@ -41,7 +41,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faHome} className="me-2" />
             How to find Accomodation
           </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='englishClass'>
+          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='EnglishClasses'>
             <FontAwesomeIcon icon={faBook} className="me-2" />
             How to find English Classes
           </NavLink>
