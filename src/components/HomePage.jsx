@@ -33,7 +33,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faUserFriends} className="me-2" />
             How to find a roommate
           </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='Community'>
+          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='community'>
           <FontAwesomeIcon icon={faSync} className="me-2" />
             How to find community
           </NavLink>
