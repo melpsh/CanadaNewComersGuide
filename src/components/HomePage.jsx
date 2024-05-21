@@ -1,80 +1,54 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faIdCard, faHospital, faUser, faCreditCard, faUserFriends, faHome, faBook, faHandsHelping, faUserMd, faSchool, faFileAlt, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import {
+  faIdCard,
+  faHospital,
+  faUser,
+  faCreditCard,
+  faUserFriends,
+  faHome,
+  faBook,
+  faHandsHelping,
+  faUserMd,
+  faSchool,
+  faFileAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { faSync } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from "react-router-dom";
 import Layout from "./Layout";
-import './Homepage.css';
+import './HomePage.css';
 
 function HomePage() {
+  const sections = [
+    { icon: faIdCard, title: "How to apply for Canadian ID", link: "IDCard" },
+    { icon: faHospital, title: "How to apply for Health Card", link: "HealthCard" },
+    { icon: faUser, title: "How to apply for SIN number", link: "SINNumber" },
+    { icon: faCreditCard, title: "How to apply for Creditcard", link: "Creditcard" },
+    { icon: faUserFriends, title: "How to find a roommate", link: "Roommate" },
+    { icon: faSync, title: "How to find community", link: "community" },
+    { icon: faHome, title: "How to find Accommodation", link: "Accomodation" },
+    { icon: faBook, title: "How to find English Classes", link: "EnglishClasses" },
+    { icon: faHandsHelping, title: "How to find volunteer experience", link: "Volunteer" },
+    { icon: faUserMd, title: "How to find family doctor", link: "Familydoctor" },
+    { icon: faSchool, title: "How to find school for children", link: "school" },
+    { icon: faFileAlt, title: "How to file taxes", link: "taxes" },
+  ];
+
   return (
     <Layout>
       <div className="container">
-        <div className="text-end"></div>
-        <h1 className="mt-5 mb-4">Welcome to Canada</h1>
+        <h1 className="mt-5 mb-4 text-center">Welcome to Canada</h1>
         <div className="row">
-          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='IDCard'>
-            <FontAwesomeIcon icon={faIdCard} className="me-2" />
-            How to apply for Canadian ID
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='HealthCard'>
-            <FontAwesomeIcon icon={faHospital} className="me-2" />
-            How to apply for Health Card
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 card-body canada-card" to='SINNumber'>
-            <FontAwesomeIcon icon={faUser} className="me-2" />
-            How to apply for SIN number
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='Creditcard'>
-            <FontAwesomeIcon icon={faCreditCard} className="me-2" />
-            How to apply for Creditcard
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 card-body mr-md-4 canada-card" to='Roommate'>
-            <FontAwesomeIcon icon={faUserFriends} className="me-2" />
-            How to find a roommate
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='community'>
-          <FontAwesomeIcon icon={faSync} className="me-2" />
-            How to find community
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='Accomodation'>
-            <FontAwesomeIcon icon={faHome} className="me-2" />
-            How to find Accomodation
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='EnglishClasses'>
-            <FontAwesomeIcon icon={faBook} className="me-2" />
-            How to find English Classes
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='Volunteer'>
-            <FontAwesomeIcon icon={faHandsHelping} className="me-2" />
-            How to find volunteer experience
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='Familydoctor'>
-            <FontAwesomeIcon icon={faUserMd} className="me-2" />
-            How to find family doctor
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='school'>
-            <FontAwesomeIcon icon={faSchool} className="me-2" />
-            How to find school for children
-          </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='taxes'>
-            <FontAwesomeIcon icon={faFileAlt} className="me-2" />
-            How to file taxes
-          </NavLink>
-
-          {/* <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='register'>
-            <FontAwesomeIcon icon={faUserPlus} className="me-2" />
-            Register
-          </NavLink> */}
+          {sections.map((section) => (
+            <NavLink key={section.link} className="card col-md-4 mb-4 card-body canada-card" to={section.link}>
+              <FontAwesomeIcon icon={section.icon} className="me-2" />
+              {section.title}
+            </NavLink>
+          ))}
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </Layout>
-  )
+  );
 }
 
 export default HomePage;

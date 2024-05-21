@@ -1,0 +1,81 @@
+/* Import Google Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ECF0F1; /* Background color */
+  color: #333; /* Dark text color */
+  margin: 0;
+  padding: 0;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Navbar and Footer Customization */
+.navbar-custom,
+.footer-custom {
+  background-color: #3498DB; /* Primary color */
+  color: #ffffff; /* Text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand,
+.footer-custom .text-muted {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #2ECC71; /* Secondary color */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.footer-custom {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-custom .text-muted {
+  color: #ffffff !important;
+}
+
+/* Utility Classes */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
