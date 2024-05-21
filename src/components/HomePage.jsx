@@ -49,7 +49,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faHandsHelping} className="me-2" />
             How to find volunteer experience
           </NavLink>
-          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='familydr'>
+          <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='Familydoctor'>
             <FontAwesomeIcon icon={faUserMd} className="me-2" />
             How to find family doctor
           </NavLink>
@@ -61,6 +61,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faFileAlt} className="me-2" />
             How to file taxes
           </NavLink>
+
           {/* <NavLink className="card col-md-4 mb-4 mr-4 card-body canada-card" to='register'>
             <FontAwesomeIcon icon={faUserPlus} className="me-2" />
             Register

@@ -14,12 +14,7 @@ import Register from './components/Register';
 import { Client } from 'appwrite';
 import HealthCard from './components/HealthCard';
 import EnglishClasses from './components/EnglishClasses';
-
-const client = new Client();
-
-client
-    .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject('6646f9a7002e21400b4f');
+import FindFamilyDoctor from './components/FindFamilyDoctor';
 
 const App = () => {
   return (
@@ -38,6 +33,7 @@ const App = () => {
       <Route path='Roommate' element ={<Roommate />}/>
       <Route path='reset-password' element={<ResetPassword />}/>
       <Route path='EnglishClasses' element={<EnglishClasses />}/>
+      <Route path='FamilyDoctor' element={<FindFamilyDoctor />}/>
       {/* <Route path='register' element={<Register />}/> */}
     </Routes>
     </>
