@@ -17,6 +17,7 @@ import EnglishClasses from './components/EnglishClasses';
 import FindFamilyDoctor from './components/FindFamilyDoctor';
 import FindVolunteerExperience from './components/FindVolunteerExperience';
 import FindCommunityEvents from './components/FindCommunityEvents';
+import TaxFiling from './components/TaxFiling';
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <Route path='FamilyDoctor' element={<FindFamilyDoctor />}/>
       <Route path='Volunteer' element={<FindVolunteerExperience />}/>
       <Route path='community' element={<FindCommunityEvents />}/>
+      <Route path='taxes' element={<TaxFiling />}/>
       {/* <Route path='register' element={<Register />}/> */}
     </Routes>
     </>
