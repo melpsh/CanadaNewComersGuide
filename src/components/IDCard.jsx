@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
-import Accordion from "./Accordion"; // Import the Accordion component
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle, faInfoCircle, faClipboardList, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 
-const data =[
+
+const data = [
   {
     id: 1,
     title: 'Step 1: Determine Eligibility',
@@ -11,7 +13,8 @@ const data =[
     <ul>
       <li>A resident of the province or territory.</li>
       <li>Legally entitled to reside in Canada.</li>
-    </ul>`
+    </ul>`,
+    icon: faCheckCircle
   },
   {
     id: 2,
@@ -40,21 +43,45 @@ const data =[
           <li>Permanent resident card</li>
         </ul>
       </li>
-    </ul>`
+    </ul>`,
+    icon: faClipboardList
   },
   {
     id: 3,
-    title: 'Step 3: Research Provincial/Territorial Requirement',
-    desc: `Each province and territory in Canada has its own process and specific requirements for issuing ID cards. Here are links to the ID card information for each province and territory:
+    title: 'Step 3: Find Application Locations',
+    desc: `Identify where you can apply for an ID card in your province or territory. This can typically be done at Service Canada locations, provincial/territorial government service centers, or online:
     <ul>
-      <li>Ontario: <a href="https://www.ontario.ca/page/ontario-photo-card" target="_blank">Ontario Photo Card</a></li>
-      <li>British Columbia: <a href="https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/id-services" target="_blank">BC Services Card</a></li>
-      <li>Alberta: <a href="https://www.alberta.ca/get-id-card.aspx" target="_blank">Alberta ID Card</a></li>
-      <li>Quebec: <a href="https://www.quebec.ca/en/health/health-issues/a-z/health-insurance-card" target="_blank">Health Insurance Card (also used as ID)</a></li>
-      <li>Other provinces and territories: Visit their respective government websites.</li>
-    </ul>`
+      <li>Service Canada Locations: <a href="https://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng" target="_blank">Find a location</a></li>
+      <li>Provincial/Territorial Government Offices: Check the official government website for your region.</li>
+      <li>Online Applications: Some regions allow online applications. Check your provincial or territorial government website for more information.</li>
+    </ul>`,
+    icon: faMapMarkerAlt
   },
-  // Add other steps in the same way
+  {
+    id: 4,
+    title: 'Step 4: Submit Your Application',
+    desc: `Once you've gathered all required documents and identified the correct application location, you can submit your application. The process typically involves:
+    <ul>
+      <li>Completing an application form (available online or at the service center).</li>
+      <li>Paying the application fee (varies by region).</li>
+      <li>Providing the required documents for verification.</li>
+      <li>Getting your photo taken (if required).</li>
+    </ul>
+    Make sure to double-check the specific requirements for your province or territory.`,
+    icon: faClipboardList
+  },
+  {
+    id: 5,
+    title: 'Step 5: Receive Your ID Card',
+    desc: `After submitting your application, you will need to wait for your ID card to be processed and mailed to you. Processing times vary by region but generally take a few weeks. In some cases, you might receive a temporary ID card or receipt immediately, which you can use until your official card arrives.`,
+    icon: faCheckCircle
+  },
+  {
+    id: 6,
+    title: 'Step 6: Verify Your ID Card',
+    desc: `Once you receive your ID card, check all the information to ensure it's correct. If there are any errors, contact the issuing authority immediately to have them corrected. Carry your ID card with you as proof of identity and residency.`,
+    icon: faCheckCircle
+  },
 ];
 
 const IDCard = () => {
@@ -64,7 +91,9 @@ const IDCard = () => {
         <h2>How to Get a Provincial or Territorial ID Card in Canada</h2>
         {data.map(step => (
           <div key={step.id} className="step">
-            <h3>{step.title}</h3>
+            <h3>
+              <FontAwesomeIcon icon={step.icon} /> {step.title}
+            </h3>
             <div dangerouslySetInnerHTML={{ __html: step.desc }} />
           </div>
         ))}
@@ -88,7 +117,7 @@ const IDCard = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.quebec.ca/en/health/health-issues/a-z/health-insurance-card" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.ramq.gouv.qc.ca/en/citizens/health-insurance/register" target="_blank" rel="noopener noreferrer">
                 Quebec Health Insurance Card (used as ID)
               </a>
             </li>
