@@ -39,7 +39,7 @@ const EventPlatforms = () => {
     <div className="event-platforms">
       {eventPlatformsData.map(platform => (
         <div key={platform.id} className="event-platform-card">
-          <img src={platform.logo} alt={`${platform.name} logo`} />
+          {/* <img src={platform.logo} alt={`${platform.name} logo`} /> */}
           <h3>{platform.name}</h3>
           <a href={platform.link} target="_blank" rel="noopener noreferrer">Visit</a>
         </div>

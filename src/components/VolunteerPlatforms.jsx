@@ -5,19 +5,19 @@ const volunteerPlatformsData = [
   {
     id: 1,
     name: 'Volunteer Canada',
-    logo: 'https://volunteer.ca/images/logos/Volunteer_Canada_logo.png',
+    logo: 'https://volunteer.ca/vdemo/design/volunteercanada_trans.gif',
     link: 'https://volunteer.ca'
   },
   {
     id: 2,
     name: 'CharityVillage',
-    logo: 'https://charityvillage.com/wp-content/themes/charityvillage/img/logo.svg',
+    logo: 'https://charityvillage.com/wp-content/uploads/2019/11/Charity-Village-Logo-300-1.png',
     link: 'https://charityvillage.com'
   },
   {
     id: 3,
     name: 'GoVolunteer',
-    logo: 'https://govolunteer.ca/wp-content/themes/volunteer-bc-2016/assets/images/logo.png',
+    logo: 'https://govolunteer.ca/wp-content/uploads/2021/04/govolunteer-powerd-by-VP-large.jpeg',
     link: 'https://govolunteer.ca'
   },
   {
@@ -29,7 +29,7 @@ const volunteerPlatformsData = [
   {
     id: 5,
     name: 'Volinspire',
-    logo: 'https://volinspire.com/assets/images/logo.svg',
+    logo: 'https://files.dosomegood.ca/images/platform/brand/dosomegood-white.svg',
     link: 'https://volinspire.com'
   }
 ];

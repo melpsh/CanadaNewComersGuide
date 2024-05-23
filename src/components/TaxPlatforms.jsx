@@ -5,25 +5,25 @@ const taxPlatformsData = [
   {
     id: 1,
     name: 'TurboTax',
-    logo: 'https://turbotax.intuit.ca/sites/default/files/styles/thumbnail/public/2020-08/turbotax-logo-2018.png',
+    logo: "https://images.ctfassets.net/6zivncwxby0i/3sHEySEScXG9miXxyY2DCI/70e91c6160dc7c60f2d8c01d4840502d/turbotax_logo_no_intuit.svg",
     link: 'https://turbotax.intuit.ca'
   },
   {
     id: 2,
     name: 'H&R Block',
-    logo: 'https://www.hrblock.ca/wp-content/uploads/2021/01/HRB_Logo_EN_4C_CMYK-300x191.jpg',
+    logo: '',
     link: 'https://www.hrblock.ca'
   },
   {
     id: 3,
     name: 'Wealthsimple Tax',
-    logo: 'https://cdn.wealthsimple.com/assets/logos/wealthsimple/tax-logo-horizontal.png',
+    logo: '',
     link: 'https://www.wealthsimple.com/en-ca/tax'
   },
   {
     id: 4,
     name: 'SimpleTax',
-    logo: 'https://www.simpletax.ca/assets/images/logos/SimpleTax_logo.svg',
+    logo: 'https://www.wealthsimple.com/static/ws-wordmark-refresh-aefa986e4074a84f853576304d0c9763.svg',
     link: 'https://www.simpletax.ca'
   }
 ];
