@@ -33,7 +33,7 @@ const DoctorPlatforms = () => {
     <div className="doctor-platforms">
       {doctorPlatformsData.map(platform => (
         <div key={platform.id} className="doctor-platform-card">
-          <img src={platform.logo} alt={`${platform.name} logo`} />
+          {/* <img src={platform.logo} alt={`${platform.name} logo`} /> */}
           <h3>{platform.name}</h3>
           <a href={platform.link} target="_blank" rel="noopener noreferrer">Visit</a>
         </div>
