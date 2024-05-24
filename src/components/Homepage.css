@@ -41,7 +41,7 @@ h1 {
 }
 
 .canada-card:hover {
-  background-color: #3498DB; /* Bright Blue */
+  background-color: #014a7b; /* Bright Blue */
   color: #ffffff;
 }
 
@@ -60,3 +60,10 @@ h1 {
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
+
+::selection {
+  background-color: #d3a201; 
+  color: #ffffff; 
+}
+
+

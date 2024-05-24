@@ -16,7 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import Layout from "./Layout";
-import './HomePage.css';
+import './Homepage.css';
 
 function HomePage() {
   const sections = [
