@@ -1,0 +1,25 @@
+/* BackToTop.css */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 3.2rem;
+  }
+  
+  .arrow {
+    font-size: 2em;
+    background-color: #014a7b;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .arrow:hover {
+    background-color: #437fbb;
+  }
+  

@@ -20,6 +20,7 @@ import './Homepage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'leaflet/dist/leaflet.css';
 import IntroductionToCanada from "./IntroductionToCanada";
+import BackToTop from "./BackToTop";
 
 function HomePage() {
   const sections = [
@@ -60,6 +61,7 @@ function HomePage() {
           ))}
         </div>
         <IntroductionToCanada />
+        <BackToTop />
       </div>
     </Layout>
   );

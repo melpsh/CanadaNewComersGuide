@@ -13,7 +13,7 @@ const IntroductionToCanada = () => {
         <p>
           Canada is known for its diverse and multicultural society. Canadians are known for their politeness, friendliness, and respect for diversity. The country celebrates a variety of cultural events and festivals throughout the year. Popular festivals include the Calgary Stampede, Toronto International Film Festival, and Montreal Jazz Festival. Canadians take pride in their country's commitment to cultural inclusivity and respect for all traditions and beliefs.
         </p>
-        <Image src="https://images.unsplash.com/photo-1566400628146-ae8f27849e90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fluid className="my-3" alt="Canadian Culture" />
+        <Image src="https://images.unsplash.com/photo-1610141353646-14306dc6a9ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fluid className="my-3" alt="Canadian Culture" />
       </div>
 
       <div className="mb-5">
@@ -29,7 +29,7 @@ const IntroductionToCanada = () => {
         <p>
           Canada is one of the most diverse countries in the world, with a population that includes people from various ethnic, cultural, and religious backgrounds. This diversity is reflected in Canadian society, arts, and cuisine. Canada has two official languages, English and French, and supports multiculturalism as a national policy. The country is also home to vibrant immigrant communities from around the globe, contributing to a rich mosaic of cultural traditions and practices.
         </p>
-        <Image src="https://images.unsplash.com/photo-1555817129-2fa6b81bd8e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fluid className="my-3" alt="Canadian Diversity" />
+        <Image src="https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fluid className="my-3" alt="Canadian Diversity" />
       </div>
 
       <div className="mb-5">
@@ -44,8 +44,7 @@ const IntroductionToCanada = () => {
           <li><strong>Calgary</strong>: Famous for its annual Calgary Stampede, a celebration of Western heritage, and its proximity to the Rocky Mountains.</li>
           <li><strong>Ottawa</strong>: The capital city of Canada, home to national institutions, landmarks like Parliament Hill, and numerous museums and galleries.</li>
         </ul>
-        <Image src="https://images.unsplash.com/photo-1520521025406-951b0e5e428b?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-        " fluid className="my-3" alt="Canadian Cities" />
+        <Image src="https://images.unsplash.com/photo-1519832979-6fa011b87667?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fluid className="my-3" alt="Canadian Cities" />
       </div>
 
       <div className="mb-5">
