@@ -17,6 +17,9 @@ import {
 import { NavLink } from "react-router-dom";
 import Layout from "./Layout";
 import './Homepage.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'leaflet/dist/leaflet.css';
+import IntroductionToCanada from "./IntroductionToCanada";
 
 function HomePage() {
   const sections = [
@@ -56,6 +59,7 @@ function HomePage() {
             </div>
           ))}
         </div>
+        <IntroductionToCanada />
       </div>
     </Layout>
   );

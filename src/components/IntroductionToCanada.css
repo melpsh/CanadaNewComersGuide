@@ -1,0 +1,42 @@
+/* IntroductionToCanada.css */
+body {
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  section{
+    background-color: #ffff;
+    width: 50rem;
+  }
+
+  div{
+    text-align: justify;
+  }
+  
+  h1, h2 {
+    color: #0056b3;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    margin: 20px 0;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  
