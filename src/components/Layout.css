@@ -4,7 +4,7 @@
 /* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ECF0F1; /* Background color */
+  background-color: #e1e1e1;
   color: #333; /* Dark text color */
   margin: 0;
   padding: 0;
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f7f7f7;
 }
 
 .container {
