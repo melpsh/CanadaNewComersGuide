@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
 import SchoolPlatforms from "./SchoolPlatforms"; // Import the SchoolPlatforms component
+import BackToTop from "./BackToTop";
 
 const schoolFindingData = [
   {
@@ -124,6 +125,7 @@ const SchoolFinding = () => {
           <p>By following these steps and utilizing the provided resources, you can successfully find a school for your child in Canada. Be sure to verify the specific requirements and procedures for your particular situation.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

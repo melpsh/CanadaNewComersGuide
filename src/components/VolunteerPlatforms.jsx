@@ -36,7 +36,8 @@ const volunteerPlatformsData = [
 
 const VolunteerPlatforms = () => {
   return (
-    <div className="volunteer-platforms">
+    <>
+        <div className="volunteer-platforms">
       {volunteerPlatformsData.map(platform => (
         <div key={platform.id} className="volunteer-platform-card">
           <img src={platform.logo} alt={`${platform.name} logo`} />
@@ -45,6 +46,18 @@ const VolunteerPlatforms = () => {
         </div>
       ))}
     </div>
+        <div className="tax-platforms">
+        {taxPlatformsData.map(platform => (
+          <div key={platform.id} className="tax-platform-card">
+            <img src={platform.logo} alt={`${platform.name} logo`} />
+            <h3>{platform.name}</h3>
+            <a href={platform.link} target="_blank" rel="noopener noreferrer">Visit</a>
+          </div>
+        ))}
+      </div>
+      <BackToTop />
+    </>
+
   );
 };
 

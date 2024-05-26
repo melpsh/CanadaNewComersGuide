@@ -30,7 +30,8 @@ const doctorPlatformsData = [
 
 const DoctorPlatforms = () => {
   return (
-    <div className="doctor-platforms">
+    <>
+          <div className="doctor-platforms">
       {doctorPlatformsData.map(platform => (
         <div key={platform.id} className="doctor-platform-card">
           {/* <img src={platform.logo} alt={`${platform.name} logo`} /> */}
@@ -39,6 +40,9 @@ const DoctorPlatforms = () => {
         </div>
       ))}
     </div>
+    <BackToTop />    
+    </>
+
   );
 };
 

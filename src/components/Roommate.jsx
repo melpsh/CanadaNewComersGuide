@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import "./IDCard.css";
 import Platforms from "./RoommatePlatforms"; // Import the Platforms component
 import RoommatePlatforms from "./RoommatePlatforms";
+import BackToTop from "./BackToTop";
 
 const roommateData = [
   {
@@ -106,6 +107,7 @@ const Roommate = () => {
           <p>By following these steps and utilizing the provided resources, you can successfully find a roommate in Canada. Be sure to verify the specific requirements and procedures for your particular situation.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

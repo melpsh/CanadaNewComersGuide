@@ -1,5 +1,6 @@
 import React from 'react';
 import './EnglishPlatforms.css';
+import BackToTop from './BackToTop';
 
 const englishPlatformsData = [
   {
@@ -36,7 +37,8 @@ const englishPlatformsData = [
 
 const EnglishPlatforms = () => {
   return (
-    <div className="english-platforms">
+    <>
+        <div className="english-platforms">
       {englishPlatformsData.map(platform => (
         <div key={platform.id} className="english-platform-card">
           {/* <img src={platform.logo} alt={`${platform.name} logo`} /> */}
@@ -45,6 +47,9 @@ const EnglishPlatforms = () => {
         </div>
       ))}
     </div>
+    <BackToTop />
+    </>
+
   );
 };
 

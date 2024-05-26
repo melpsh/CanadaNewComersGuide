@@ -6,6 +6,8 @@
     z-index: 1000;
     cursor: pointer;
     width: 3.2rem;
+    border: 2px solid white;
+    border-radius: 50%;
   }
   
   .arrow {

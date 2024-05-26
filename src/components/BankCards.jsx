@@ -1,5 +1,6 @@
 import React from 'react';
 import './BankCards.css';
+import BackToTop from './BackToTop';
 
 const banksData = [
   {
@@ -42,7 +43,8 @@ const banksData = [
 
 const BankCards = () => {
   return (
-    <div className="bank-cards">
+    <>
+          <div className="bank-cards">
       {banksData.map(bank => (
         <div key={bank.id} className="bank-card">
           <img src={bank.logo} alt={`${bank.name} logo`} />
@@ -51,6 +53,8 @@ const BankCards = () => {
         </div>
       ))}
     </div>
+    <BackToTop />
+    </>
   );
 };
 

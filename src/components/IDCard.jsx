@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import "./IDCard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faInfoCircle, faClipboardList, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import BackToTop from "./BackToTop";
 
 
 const data = [
@@ -161,6 +162,7 @@ const IDCard = () => {
           <p>By following these steps and utilizing the provided resources, newcomers to Canada can successfully obtain a provincial or territorial ID card. Be sure to verify the specific requirements and procedures for your particular province or territory.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

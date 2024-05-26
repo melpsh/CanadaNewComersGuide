@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
+import BackToTop from "./BackToTop";
 
 const sinData = [
   {
@@ -142,6 +143,7 @@ const SINNumber = () => {
           <p>By following these steps and utilizing the provided resources, you can successfully obtain a Social Insurance Number (SIN) in Canada. Be sure to verify the specific requirements and procedures for your particular situation.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

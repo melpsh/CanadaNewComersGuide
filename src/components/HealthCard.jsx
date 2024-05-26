@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
+import BackToTop from "./BackToTop";
 
 const healthCardData = [
   {
@@ -190,6 +191,7 @@ const HealthCard = () => {
           <p>By following these steps and utilizing the provided resources, you can successfully obtain a health card in Canada. Be sure to verify the specific requirements and procedures for your particular province or territory.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 import "./IDCard.css";
 import EnglishPlatforms from "./EnglishPlatforms"; // Import the EnglishPlatforms component
+import BackToTop from "./BackToTop";
 
 const englishClassesData = [
   {
@@ -103,6 +104,7 @@ const EnglishClasses = () => {
           <p>By following these steps and utilizing the provided resources, you can successfully find English classes in Canada. Be sure to verify the specific requirements and procedures for your particular situation.</p>
         </div>
       </div>
+      <BackToTop />
     </Layout>
   );
 };

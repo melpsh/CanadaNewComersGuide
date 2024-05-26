@@ -30,7 +30,8 @@ const taxPlatformsData = [
 
 const TaxPlatforms = () => {
   return (
-    <div className="tax-platforms">
+    <>
+        <div className="tax-platforms">
       {taxPlatformsData.map(platform => (
         <div key={platform.id} className="tax-platform-card">
           <img src={platform.logo} alt={`${platform.name} logo`} />
@@ -39,6 +40,9 @@ const TaxPlatforms = () => {
         </div>
       ))}
     </div>
+    <BackToTop />
+    </>
+
   );
 };
 

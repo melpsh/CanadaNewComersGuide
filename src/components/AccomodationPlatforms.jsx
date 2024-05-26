@@ -1,5 +1,6 @@
 import React from 'react';
 import './Platforms.css';
+import BackToTop from './BackToTop';
 
 const platformsData = [
   {
@@ -56,6 +57,7 @@ const AccomodationPlatforms = () => {
           <a href={platform.link} target="_blank" rel="noopener noreferrer">Visit</a>
         </div>
       ))}
+      <BackToTop />
     </div>
   );
 };
